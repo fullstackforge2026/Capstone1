@@ -199,6 +199,12 @@ textarea {
    ============================= */
 .section-band {
     background-color: #f9fafb;
+
+.section-space {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 }
 
 .section-band-light {
