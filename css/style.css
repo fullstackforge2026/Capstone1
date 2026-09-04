@@ -37,11 +37,22 @@ textarea {
 .site-header {
     position: sticky;
     top: 0;
-    z-index: 10;
-    background-color: rgba(17, 24, 39, 0.96);
-    color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    z-index: 1000;
+
+    /* Transparent dark background */
+    background: rgba(8, 28, 43, 0.75);
+
+    /* Glass effect */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* Optional glow */
+    border-bottom: 1px solid rgba(37, 99, 235, 0.25);
+    box-shadow: 0 5px 25px rgba(37, 99, 235, 0.15);
 }
+
+
+
 
 .navbar {
     width: 100%;
@@ -68,7 +79,7 @@ textarea {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #2563eb;
+    background-color: #2e2f31;
     color: white;
     font-size: 14px;
     font-weight: 800;
@@ -123,7 +134,7 @@ textarea {
 }
 
 .hero-section {
-    background: linear-gradient(135deg, #f8fafc, #186aa0);
+    background: linear-gradient(135deg, #f8fafc, #1f4f6e);
 }
 
 .hero-content {
@@ -215,7 +226,7 @@ textarea {
    Reusable sections
    ============================= */
 .section-band {
-    background-color: #f9fafb;
+    background-color: #89898d;
 
 .section-space {
     padding-top: 80px;
