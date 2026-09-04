@@ -19,41 +19,60 @@
 <body>
     <!-- Responsive Bootstrap navigation -->
     <header class="site-header sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark site-navbar" aria-label="Main navigation">
-            <div class="container">
-                <a class="navbar-brand brand d-flex align-items-center gap-2" href="#home">
-                    <span class="brand-mark">RD</span>
-                    <span class="brand-text">
-                        <strong>Renz Dev</strong>
-                        <small class="d-block">Aspiring Full-Stack Developer</small>
-                    </span>
-                </a>
 
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mainNav"
-                    aria-controls="mainNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark site-navbar" aria-label="Main navigation">
+        <div class="container">
 
-                <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+            <!-- LOGO / BRAND - LEFT -->
+            <a class="navbar-brand brand d-flex align-items-center gap-2" href="#home">
+                <span class="brand-mark">RD</span>
+
+                <span class="brand-text">
+                    <strong>Renz Dev</strong>
+                    <small class="d-block">Aspiring Full-Stack Developer</small>
+                </span>
+            </a>
+
+            <!-- MOBILE BUTTON -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU - RIGHT -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+
+        </div>
+    </nav>
     </header>
 
     <main id="home">
+
         <!-- Hero: stacks on mobile, becomes two columns on large screens -->
         <section class="hero-section py-5 py-lg-6" aria-labelledby="hero-title">
             <div class="container">
@@ -80,7 +99,7 @@
                     <div class="col-lg-5 order-1 order-lg-2 text-center">
                      <img
     class="profile-image img-fluid"
-    src="image/profile.jpg"
+    src="image/profile.png"
     alt="Profile photo for RenzDev"
     width="360"
     height="360"

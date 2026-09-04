@@ -44,9 +44,10 @@ textarea {
 }
 
 .navbar {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 16px 24px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 16px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,12 +122,28 @@ textarea {
     padding: 92px 24px 88px;
 }
 
+.hero-section {
+    background: linear-gradient(135deg, #f8fafc, #186aa0);
+}
+
 .hero-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 64px;
 }
+
+/* Renz Dev Hero Title */
+
+#hero-title {
+    background: linear-gradient(90deg, #2563eb, #f1b306);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+
 
 .hero-text {
     flex: 1 1 600px;
@@ -383,6 +400,36 @@ textarea {
     transition: background-color 0.2s ease, border-color 0.2s ease,
                 color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+/* =============================
+   Buttons
+   ============================= */
+
+/* DITO MO I-PASTE */
+.hero-section .btn {
+    padding: 6px 14px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+}
+
+.hero-section .btn-primary {
+    background: linear-gradient(90deg, #2563eb, #06b6d4);
+}
+
+.hero-section .btn-outline-primary {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    color: white;
+    border: none;
+}
+
+/* EXISTING CODE MO ITO */
+.btn {
+    display: inline-block;
+    /* etc... */
+}
+
 
 .btn:hover,
 .btn:focus {
