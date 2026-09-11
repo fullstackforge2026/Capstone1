@@ -688,3 +688,263 @@ section h2 {
         padding-bottom: 60px;
     }
 }
+/* =========================
+   MODERN CONTACT FORM
+========================= */
+
+.contact-form {
+    width: 80%;
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border: 1px solid #dbeafe;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.12);
+}
+
+.contact-form .form-label {
+    display: block;
+    margin-bottom: 5px;
+
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    min-height: 20px;
+
+    padding: 12px 16px;
+
+    background: #ffffff;
+    color: #1e293b;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #2563eb;
+    outline: none;
+
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.contact-form textarea.form-control {
+    min-height: 10M0px;
+    resize: vertical;
+}
+
+.contact-form .form-control::placeholder {
+    color: #94a3b8;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 13px 20px;
+
+    color: #ffffff !important;
+
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #06b6d4
+    ) !important;
+
+    border: none !important;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.20);
+
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.30);
+}
+/* =====================================
+   CONTACT PUSH ANIMATION
+===================================== */
+
+.contact-animation-wrap {
+    position: relative;
+    width: 100%;
+}
+
+
+/* FORM PUSH EFFECT */
+.contact-animation-wrap .contact-form {
+    position: relative;
+
+    animation: formPush 3s ease-in-out infinite;
+}
+
+@keyframes formPush {
+
+    0%,
+    35%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(9px);
+    }
+
+    65% {
+        transform: translateX(0);
+    }
+}
+
+
+/* =====================================
+   CSS CHARACTER
+===================================== */
+
+.push-character {
+    position: absolute;
+
+    left: -68px;
+    bottom: 70px;
+
+    width: 60px;
+    height: 125px;
+
+    z-index: 5;
+
+    animation: characterPush 3s ease-in-out infinite;
+}
+
+
+/* HEAD */
+.character-head {
+    position: absolute;
+
+    width: 34px;
+    height: 34px;
+
+    top: 0;
+    left: 12px;
+
+    background: #f2b38b;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 -6px 0 #0f172a;
+}
+
+
+/* BODY */
+.character-body {
+    position: absolute;
+
+    top: 34px;
+    left: 9px;
+
+    width: 40px;
+    height: 55px;
+
+    background: linear-gradient(
+        180deg,
+        #2563eb,
+        #0891b2
+    );
+
+    border-radius: 12px 12px 8px 8px;
+}
+
+
+/* ARM PUSHING FORM */
+.character-arm {
+    position: absolute;
+
+    top: 45px;
+    left: 42px;
+
+    width: 38px;
+    height: 10px;
+
+    background: #f2b38b;
+
+    border-radius: 10px;
+
+    transform-origin: left center;
+
+    transform: rotate(-8deg);
+}
+
+
+/* LEGS */
+.character-leg {
+    position: absolute;
+
+    top: 84px;
+
+    width: 11px;
+    height: 37px;
+
+    background: #172554;
+
+    border-radius: 8px;
+}
+
+.leg-one {
+    left: 14px;
+
+    transform: rotate(8deg);
+}
+
+.leg-two {
+    left: 33px;
+
+    transform: rotate(-8deg);
+}
+
+
+/* CHARACTER MOVEMENT */
+@keyframes characterPush {
+
+    0%,
+    35%,
+    100% {
+        transform:
+            translateX(0)
+            rotate(-2deg);
+    }
+
+    50% {
+        transform:
+            translateX(13px)
+            rotate(4deg);
+    }
+
+    65% {
+        transform:
+            translateX(2px)
+            rotate(-2deg);
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 991px) {
+
+    .push-character {
+        display: none;
+    }
+
+    .contact-animation-wrap .contact-form {
+        animation: none;
+    }
+
+}
